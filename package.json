@@ -1,0 +1,41 @@
+{
+  "name": "cdn-cert",
+  "version": "1.0.0",
+  "description": "Automatically push the new certificates to Aliyun CDN",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:demo": "tsc && node dist/demo.js",
+    "start:dev": "tsc && node dist/index.js",
+    "start:prod": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuyun/cert-cdn.git"
+  },
+  "keywords": [
+    "letsencrypt",
+    "CDN",
+    "Aliyun",
+    "HTTPS"
+  ],
+  "author": "Fuyun",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fuyun/cert-cdn/issues"
+  },
+  "homepage": "https://github.com/fuyun/cert-cdn#readme",
+  "dependencies": {
+    "@alicloud/cdn20180510": "^4.0.0",
+    "@alicloud/openapi-client": "^0.4.12",
+    "@alicloud/tea-typescript": "^1.8.0",
+    "@alicloud/tea-util": "^1.4.9",
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.6",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
