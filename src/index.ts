@@ -11,7 +11,7 @@ export async function updateCerts() {
       const client = cdnCert.createClient(config.accessKeyId, config.accessKeySecret);
 
       for (const domain of config.domains) {
-        const cert = readFileSync(domain.certPath, 'utf8');
+        const cert = readFileSync(domain.certPublicKeyPath, 'utf8');
         const key = readFileSync(domain.certPrivateKeyPath, 'utf8');
         const result = await cdnCert.setCdnDomainSSLCert(client, domain.domain, cert, key);
         console.log(`--${domain.domain}--\n`, Util.toJSONString($tea.toMap(result)));
