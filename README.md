@@ -14,15 +14,16 @@
 
 以对象数组的形式配置多个用户和域名：
 
-| 配置项                        | 说明               |
-|----------------------------|------------------|
-| accessKeyId                | AccessKey ID     |
-| accessKeySecret            | AccessKey Secret |
-| regionId                   | 可用区ID，可选         |
-| domains                    | 域名配置列表           |
-| domains.domain             | 域名               |
-| domains.certPublicKeyPath  | 证书路径             |
-| domains.certPrivateKeyPath | 证书私钥路径           |
+| 配置项                     | 说明               |
+|-------------------------|------------------|
+| accessKeyId             | AccessKey ID     |
+| accessKeySecret         | AccessKey Secret |
+| regionId                | 可用区ID，可选         |
+| cert                    | 证书配置             |
+| cert.certDomain         | 根域名              |
+| cert.certPublicKeyPath  | 证书路径             |
+| cert.certPrivateKeyPath | 证书私钥路径           |
+| cert.cdnDomains         | CDN域名列表          |
 
 ## 定时更新
 

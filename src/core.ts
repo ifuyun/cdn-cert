@@ -34,7 +34,8 @@ export class CdnCert {
   createClient(accessKey: string, accessSecret: string): Client {
     const config = new $OpenApi.Config({
       accessKeyId: accessKey,
-      accessKeySecret: accessSecret
+      accessKeySecret: accessSecret,
+      connectTimeout: 60000
     });
 
     return new Client(config);
